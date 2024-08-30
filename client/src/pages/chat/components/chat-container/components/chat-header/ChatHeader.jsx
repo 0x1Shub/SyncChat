@@ -35,7 +35,9 @@ const ChatHeader = () => {
           </div>
           <div>
             {selectedChatType === "contact" && selectedChatData.firstName
-              ? `${selectedChatData.firstName}` + `${selectedChatData.lastName}`
+              ? `${selectedChatData.firstName}` +
+                " " +
+                `${selectedChatData.lastName}`
               : selectedChatData.email.split("").shift()}
           </div>
         </div>
